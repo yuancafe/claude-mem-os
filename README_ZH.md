@@ -1,6 +1,6 @@
 # Claude Mem OS Bridge（中文）
 
-[English](./README_EN.md) | [中文](./README_CN.md)
+[English](./README.md) | [简体中文](./README_ZH.md)
 
 > **缝合怪声明**  
 > 这是一个有意设计的“缝合怪”集成层，用来联动三个上游仓库：
