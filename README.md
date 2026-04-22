@@ -9,6 +9,30 @@
 - Syncs them into MemOS via OpenMem `/add/message`.
 - Uses incremental state (`last_synced_id`) to avoid duplicate uploads.
 
+## Why This Frankenstein Exists / 为什么要做这个“缝合怪”
+
+### EN
+`claude-mem` and `MemOS` each solve different halves of the problem:
+- `claude-mem`: excellent automatic capture on local coding workflows.
+- `MemOS`: excellent cross-agent/shared memory retrieval and cloud-scale reuse.
+
+This bridge combines both strengths:
+1. Keep local auto-capture experience unchanged.
+2. Turn isolated local memory into shared memory assets.
+3. Reuse memory across tools/agents instead of rebuilding context repeatedly.
+4. Reduce prompt/context token waste over time.
+
+### 中文
+`claude-mem` 和 `MemOS` 各自只解决一半问题：
+- `claude-mem`：本地编码场景自动记忆采集很强。
+- `MemOS`：跨 Agent / 跨工具共享检索很强。
+
+这个桥接层的价值就是把两边优势拼起来：
+1. 保留本地自动采集体验，不改工作习惯。
+2. 把“本地孤岛记忆”变成“可共享资产”。
+3. 多个工具/Agent 复用同一份记忆，减少重复喂上下文。
+4. 长期降低上下文 token 浪费。
+
 ## Architecture / 架构
 1. `claude-mem` captures memory locally.
 2. This bridge polls `session_summaries`.
@@ -91,4 +115,3 @@ launchctl load ~/Library/LaunchAgents/com.claude-mem-os.bridge.plist
 
 ## License
 MIT
-
