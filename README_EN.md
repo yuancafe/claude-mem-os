@@ -3,9 +3,10 @@
 [English](./README_EN.md) | [中文](./README_CN.md)
 
 > **Frankenstein integration notice**  
-> This project is intentionally a glue layer that stitches two upstream systems together:
+> This project is intentionally a glue layer that stitches three upstream repositories together:
 > - `claude-mem`
-> - `MemOS` (`memos-api-mcp` / OpenMem API)
+> - `memos-api-mcp`
+> - `MemOS`
 
 ## Source Repositories (Top-Level)
 This project explicitly connects these three repositories:

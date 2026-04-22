@@ -3,12 +3,13 @@
 [English](./README_EN.md) | [中文](./README_CN.md)
 
 > **缝合怪声明**  
-> 这是一个有意设计的“缝合怪”集成层，把两个上游系统拼起来：
+> 这是一个有意设计的“缝合怪”集成层，用来联动三个上游仓库：
 > - `claude-mem`
-> - `MemOS`（`memos-api-mcp` / OpenMem API）
+> - `memos-api-mcp`
+> - `MemOS`
 
-## 项目来源仓库（最上方声明）
-本项目开宗明义就是把以下三个仓库连在一起：
+## 项目来源仓库
+本项目用于连接以下三个仓库：
 
 1. claude-mem: https://github.com/thedotmack/claude-mem
 2. memos-api-mcp: https://github.com/MemTensor/memos-api-mcp

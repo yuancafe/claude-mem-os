@@ -1,10 +1,16 @@
 # Claude Mem OS Bridge
 
-[English](./README_EN.md) | [中文](./README_CN.md)
+[English Documentation](./README_EN.md) | [中文文档](./README_CN.md)
 
-This repo provides a **Frankenstein integration (缝合怪集成)** between:
-- `claude-mem` (local automatic memory capture)
-- `MemOS` / `memos-api-mcp` (shared memory API and retrieval)
+This repository is a **Frankenstein integration** that connects:
+1. [`claude-mem`](https://github.com/thedotmack/claude-mem)
+2. [`memos-api-mcp`](https://github.com/MemTensor/memos-api-mcp)
+3. [`MemOS`](https://github.com/MemTensor/MemOS)
 
-For full docs, choose your language above.
+Purpose:
+- Keep local automatic capture from `claude-mem`
+- Sync finalized summaries into MemOS shared memory
+- Enable cross-tool and cross-agent memory reuse
+
+For full setup (Mem / SMC / MCP), use the language-specific docs above.
 
